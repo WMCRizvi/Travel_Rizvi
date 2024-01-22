@@ -1,0 +1,483 @@
+:root {
+  --font-size-xl: 96px;
+  --groese-600: 24px;
+  --font-size-500: 20px;
+  --font-size-400: 16;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.main-header {
+  background-image: url("img/1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 384px;
+  padding-bottom: 403px;
+  color: white;
+  text-align: right;
+  padding-right: 192px;
+  line-height: 16px;
+  max-width: 100%;
+}
+
+.main-header h1 {
+  font-weight: bold;
+  font-size: var(--font-size-xl);
+}
+
+.main-header h2,
+.main-header p {
+  font-size: var(--font-size-600);
+  line-height: 22px;
+}
+
+main {
+  margin-left: calc(5% + 2em);
+  margin-right: calc(5% + 2em);
+  padding-bottom: 5em;
+}
+
+.guide-info-container {
+  position: absolute;
+  bottom: -9%;
+  right: 9vw;
+  left: 9vw;
+  background-color: white;
+  line-height: 0.1em;
+}
+
+.guide-title {
+  margin: auto;
+  width: 45vw;
+  padding-bottom: 1em;
+  border-bottom: 0.1rem solid black;
+  text-align: center;
+  background-color: white;
+  letter-spacing: 0.1em;
+}
+
+.author-info {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin: auto;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  background-color: white;
+  letter-spacing: 0.125em;
+  font-style: italic;
+}
+
+.author-info img {
+  border-radius: 25%;
+}
+
+.introduction-section {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  display: flex;
+  gap: 5vw;
+}
+
+.intro-image {
+  text-align: center;
+}
+
+.intro-image img {
+  width: 31.25em;
+  object-fit: cover;
+  padding-top: 100px;
+}
+
+.intro-text {
+  margin-top: 6vw;
+  letter-spacing: 0.05em;
+  width: 50vw;
+}
+
+.main-article {
+  margin: auto;
+  padding-left: 6.5vw;
+  padding-right: 6.5vw;
+  line-height: 2em;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  height: 105vh;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discovery-section {
+  margin: auto;
+  width: 60vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  max-width: 100%;
+}
+
+.geology-discovery {
+  display: flex;
+  align-items: start;
+}
+
+
+.geology-discovery img {
+  width: 20rem;
+  padding-top: 0.8em;
+  padding-right: 1em;
+  margin-right: 0.625rem;
+}
+
+.discovery-images {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  justify-content: center;
+}
+
+.discovery-images img {
+  width: calc((80vw - 3.75rem) / 3);
+  height: calc((80vw - 3.75rem) / 3);
+  object-fit: cover;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-container p {
+  margin-top: 0.625rem;
+}
+
+.image-container:not(:last-child) {
+  margin-right: 1.25rem;
+}
+
+.main-footer {
+  background-image: url("img/10.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 18vw;
+  padding-bottom: 19vw;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.main-footer h2 {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.main-footer p {
+  margin-bottom: 2em;
+}
+
+.email-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 40em;
+  width: 100%;
+}
+
+input {
+  flex: 1;
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  font-size: 1.25rem;
+  line-height: 1;
+  outline: none;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button {
+  width: 8em;
+  padding: 0.5em;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  margin-left: 3em;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.logo-container {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.logo-container img {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 1900px) {
+  .guide-info-container {
+    position: static;
+    background-color: white;
+    line-height: 0.1em;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-xl: 5vw;
+    --font-size-600: 1.0rem;
+    --font-size-500: 1.25rem;
+    --font-size-400: 1rem;
+    --font-size-200: 0.85rem;
+  }
+
+  .main-header {
+    background-image: url("img/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20vw;
+    padding-bottom: 21vw;
+    color: white;
+    text-align: right;
+    padding-right: 10vw;
+    line-height: 1em;
+    max-width: 100%;
+  }
+
+  .main-header h1 {
+    font-weight: bold;
+    font-size: var(--font-size-xl);
+  }
+
+  .main-header h2 {
+    font-weight: normal;
+    font-size: var(--font-size-600);
+  }
+
+  .main-header p {
+    font-size: var(--font-size-600);
+    line-height: 1.4em;
+  }
+
+  .guide-title {
+    margin: auto;
+    width: 80vw;
+    padding-bottom: 1em;
+    border-bottom: 0.1rem solid black;
+    text-align: center;
+    background-color: white;
+    letter-spacing: 0.1em;
+  }
+
+  main:not(.video-container) {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 5em;
+  }
+
+  .introduction-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-image img {
+    width: 43em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .intro-text {
+    letter-spacing: 0.05em;
+    width: 90%;
+  }
+
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .discovery-section {
+    padding: 2em;
+  }
+
+  .discovery-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .geology-discovery {
+    align-items: flex-start;
+    margin-left: 0.625rem;
+  }
+
+  .geology-discovery img {
+    margin-bottom: 0.625rem;
+  }
+
+  .discovery-images img {
+    width: 43em;
+    height: auto;
+    margin-bottom: 0.625rem;
+  }
+
+  .image-container {
+    margin-left: 0.625rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 320px) {
+  :root {
+    --font-size-xl: 5vw;
+    --font-size-600: 1.0rem;
+    --font-size-500: 1.25rem;
+    --font-size-400: 1rem;
+    --font-size-200: 0.85rem;
+  }
+
+  .main-header {
+    background-image: url("img/1.jpg");
+    padding-top: 200vw;
+    padding-bottom: 70vw;
+    color: white;
+    text-align: right;
+  }
+
+  .main-header h1 {
+    font-weight: bold;
+    font-size: var(--font-size-xl);
+  }
+
+  .main-header h2 {
+    font-weight: normal;
+    font-size: var(--font-size-600);
+  }
+
+  .main-header p {
+    font-size: var(--font-size-600);
+    line-height: 1.4em;
+  }
+
+  .guide-title {
+    margin: auto;
+    width: 80vw;
+    padding-bottom: 1em;
+    border-bottom: 0.1rem solid black;
+    text-align: center;
+    background-color: white;
+    letter-spacing: 0.1em;
+  }
+
+  main:not(.video-container) {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 5em;
+  }
+
+  .introduction-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-image img {
+    width: 43em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .intro-text {
+    letter-spacing: 0.05em;
+    width: 90%;
+  }
+
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .geology-discovery {
+    padding: 2em;
+  }
+
+  .discovery-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .geology-discovery {
+    align-items: flex-start;
+    margin-left: 0.625rem;
+  }
+
+  .geology-discovery img {
+    margin-bottom: 0.625rem;
+  }
+
+  .discovery-images img {
+    width: 43em;
+    height: auto;
+    margin-bottom: 0.625rem;
+  }
+
+  .image-container {
+    margin-left: 0.625rem;
+    text-align: left;
+  }
+}
